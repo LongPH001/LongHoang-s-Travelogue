@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playwrite+VN:wght@100..400&display=swap');
+body {
+    background-color:rgb(0, 0, 0);
+    color: rgb(65, 114, 2);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.header {
+     font-family: 'Playwrite VN', sans-serif;
+     text-align: center;
+     margin-bottom: 20px;
+     color:yellow;
+}
+
+
+img {
+    border: 5px solid gold; /* Gold border around the image */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 0 10px gold, 0 0 20px goldenrod; /* Add a glowing gold effect */
+    padding: 5px; /* Space between the image and the border */
+    margin: 10px; /* Space around the images */
+}
+
+/* Style for the section title (h2) */
+.location h2 {
+    font-size: 2rem; /* Adjust font size */
+    color: gold; /* Gold color for the text */
+    text-shadow: 0 0 10px gold, 0 0 20px goldenrod; /* Glowing effect */
+    margin: 10px 0; /* Add spacing above and below */
+}
+
+/* Adjust content alignment */
+.location .content {
+    display: flex;
+    flex-direction: column; /* Ensure text is closer to the images */
+    align-items: center; /* Center content */
+}
+
+.location .text p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+    max-width: 800px; /* Limit paragraph width */
+    line-height: 1.6;
+}
