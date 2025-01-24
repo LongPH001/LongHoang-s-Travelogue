@@ -12,45 +12,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <h1>Macau Travelogue</h1>
-            <p>European Inspiration City</p>
-        </header>
+    
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Macao Travelogue</h1>
+        <p>European Inspiration City</p>
+    </header>
 
-        <!-- Studio City Section -->
-        <section class="location">
-            <h2>The Parasian Macao</h2>
-            <div class="content">
-                <img src="/images/TheParasianMacao.JPEG" height="500"  alt="This is a tower called Parisian Macao" title="OMG this looks like the Eiffel Tower">
-                <img src="/images/TheParasianAtNight.JPEG" height="500" alt="The tower shown at night" title="It can also LIT UP">
-                <img src="/images/TheCasinosAtNight.JPEG" height="500" alt="The Casino overview at night" title="Overview of the entire Parasian">
-                <div class="text">
-                    <p>
-                        This picture is taken during my trip to Macau, destination renowned for its casinos. The Parisian Macao is a luxurious destination that captures the essence of Paris in the heart of Macau. 
-                        Renowned as one of Macau's most iconic landmarks, the tower blends European brick-building architecture with a touch of modern luxury, featuring golden accents. 
-                        Its half-scale replica of the Eiffel Tower is inspired by the macaus and due to it's early 1500 of Portugese Settlement, making it a symbol of elegance and grandeur in the region. The Parisian Macao offers a unique experience where classic European design meets contemporary opulence.
-                    </p>
+    <!-- The Parisian Macao Section -->
+    <section class="location">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" aria-label="Previous Image">&#8249;</button>
+            <div class="carousel-images">
+                <img src="/images/TheParasianMacao.JPEG" alt="This is a tower called Parisian Macao" title="OMG this looks like the Eiffel Tower">
+                <img src="/images/TheParasianAtNight.JPEG" alt="The tower shown at night" title="It can also LIT UP">
+                <img src="/images/TheCasinosAtNight.JPEG" alt="The Casino overview at night" title="Overview of the entire Parasian">
             </div>
-        </section>
+            <button class="carousel-button next" aria-label="Next Image">&#8250;</button>
+        </div>
+        <div class="text">
+          <h3>The Parisian Macao</h3>
+            <p>
+                This picture is taken during my trip to Macau, a destination renowned for its casinos. 
+                The Parisian Macao is a luxurious destination that captures the essence of Paris in the heart of Macau. 
+                Renowned as one of Macau's most iconic landmarks, the tower blends European brick-building architecture 
+                with a touch of modern luxury, featuring golden accents. Its half-scale replica of the Eiffel Tower is inspired by 
+                Macau's history and its early Portuguese settlement, making it a symbol of elegance and grandeur in the region. 
+                The Parisian Macao offers a unique experience where classic European design meets contemporary opulence.
+            </p>
+        </div>
+    </section>
 
-        <!-- Hong Kong-Zhuhai-Macau Bridge Section -->
-        <section class="location">
-            <h2>Can't miss the signature Portugese Egg Tarts</h2>
-            <div class="content">
-                <img src="/images/Lady of Carmel.JPEG" height="500" alt="A Famous Village for Egg Tarts" title="Amazing Egg Tart Shop">
-                <img src="images/HalfBittenEggTart.JPEG" height="500" alt="A deliciously half bitten Egg Tarts" title="You have to try this">
-                <div class="text">
-                    <p>
-                        
-                    </p>
-                </div>
+      <section class="location"> 
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" aria-label="Previous Image">&#8249;</button>
+            <div class="carousel-images">
+                <img src="images/Lord-stows bakery.jpg" alt="A bakery store" title="They sell good egg tarts here">
+                <img src="images/Lady of Carmel.JPEG" alt="This is a village" title="Yummy Egg Tarts here">
+                <img src="images/HalfBittenEggTart.JPEG" alt="A half eaten egg tart" title="Yummy">
             </div>
-        </section>
+            <button class="carousel-button next" aria-label="Next Image">&#8250;</button>
+        </div>
+        <div class="text">
+          <h3>Taipa Village Macau</h3>
+            <p>
+              Famous Egg Tart Shop, among the many food stops in Taipa Village, Lord Stow's Bakery is an iconic destination for egg tart lovers. Established in 1989, this bakery is credited with popularizing the Portuguese egg tart in Macau.
+              Visitors walk by to Lord Stow's Bakery to savor this sweet treat while exploring the iconic streets of Taipa Village. Whether paired with a cup of coffee or enjoyed on its own, the experience of eating a warm, freshly baked egg tart in this picturesque setting is one of Macau's culinary highlights. 
+            </p>
+        </div>
     </div>
 
+<section class="location">
+  <div class="container">
+    <video controls autoplay muted loop class="video">
+      <source src="RoadTrip.MP4" type="video/mp4">
+    </video>
+    <div class="text">
+      <h3>Hong Kong to Macao bridge</h3>
+      <p>
+        As you can see from the video recorded by me, the bridge dive straight into the ocean water. It leds to an underground water tunnel.
+        The bridge opened in 2018, connect 3 continents altogether (HK to Macau to Zhuhai) becoming the world's longest sea-crossing bridge spanning for over 55 kilometers.
+        The view is absolutely stunning, considering you're in the middle of the sea and there is only one road to travel. It gives me the feelings of a fever dream.  
+      </p>
+    </div>
+  </div>
+</section>
+
+      
     <!-- Link to JS File -->
     <script src="script.js" defer></script>
+    
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Macao Travelogue. All Rights Reserved. All Original Work Is Done By Me</p>
+      </div>
 </body>
 </html>

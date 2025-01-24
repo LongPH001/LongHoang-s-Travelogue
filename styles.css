@@ -2,7 +2,6 @@
 body {
     background-color:rgb(0, 0, 0);
     color: rgb(65, 114, 2);
-    text-align: center;
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -13,36 +12,128 @@ body {
      text-align: center;
      margin-bottom: 20px;
      color:yellow;
+     text-shadow: 0 0 10px rgb(108, 1, 248), 0 0 20px goldenrod; 
+}
+h3 {
+    color: rgb(255, 165, 0); /* Example color: orange */
+    
+    text-align: center; /* Center align if needed */
+    margin: 10px 0;
+}
+.location {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-
-img {
-    border: 5px solid gold; /* Gold border around the image */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 0 10px gold, 0 0 20px goldenrod; /* Add a glowing gold effect */
-    padding: 5px; /* Space between the image and the border */
-    margin: 10px; /* Space around the images */
+.location-header {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Style for the section title (h2) */
 .location h2 {
-    font-size: 2rem; /* Adjust font size */
-    color: gold; /* Gold color for the text */
-    text-shadow: 0 0 10px gold, 0 0 20px goldenrod; /* Glowing effect */
-    margin: 10px 0; /* Add spacing above and below */
+    font-size: 2rem; 
+    color: gold; 
+    margin-bottom: 600px;
 }
+
 
 /* Adjust content alignment */
 .location .content {
     display: flex;
-    flex-direction: column; /* Ensure text is closer to the images */
-    align-items: center; /* Center content */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .location .text p {
+    flex: 1;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(71, 172, 13);
     margin-top: 10px;
-    max-width: 800px; /* Limit paragraph width */
+    max-width: 400px; 
     line-height: 1.6;
+    text-align: left;
 }
+
+.location .container {
+display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds space between the video and text */
+}
+
+.carousel {
+    flex: 1;
+    position: relative;
+    max-width: 300px;
+    overflow: hidden; 
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+
+}
+
+.carousel-images img {
+    width: 100%; 
+    flex-shrink: 0; 
+    border: none; 
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 215, 0, 0.8); 
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+video {
+    flex: 1;
+    max-width: 300px;
+    overflow: hidden; 
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+  }
+
+  .footer-bottom p {
+    color: #ffffff; 
+    margin: 0; 
+  }
